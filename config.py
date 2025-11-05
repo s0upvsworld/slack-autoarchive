@@ -8,9 +8,9 @@ from datetime import datetime, timedelta
 
 def get_channel_reaper_settings():
     """ This returns a dictionary of all settings. """
-    days_inactive = int(os.environ.get('DAYS_INACTIVE', 60))
+    days_inactive = int(os.environ.get('DAYS_INACTIVE', 540)) # default to 18 months
     return {
-        'admin_channel': os.environ.get('ADMIN_CHANNEL', ''),
+        'admin_channel': os.environ.get('ADMIN_CHANNEL', 'it_test_stuff'),
         'days_inactive': days_inactive,
         # set MIN_MEMBERS and any channels larger than this in people
         # are exempt from archiving. 0 is no limit.

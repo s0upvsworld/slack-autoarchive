@@ -47,8 +47,7 @@ class ChannelReaper():
         archive_msg = """
 This channel has had no activity for {} days. It is being auto-archived.
 If you feel this is a mistake you can <https://get.slack.help/hc/en-us/articles/201563847-Archive-a-channel#unarchive-a-channel|unarchive this channel>.
-This will bring it back at any point. In the future, you can add '%%noarchive' to your channel topic or purpose to avoid being archived.
-This script was run from this repo: https://github.com/Symantec/slack-autoarchive
+This will bring it back at any point. Please email itsupport@movableink.com with any questions. Thanks!
 """
 
         if os.path.isfile('templates.json'):
